@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Online Auction System</title>
+    <link rel="icon" href="/assets/images/bid system icon.png">
+    <!-- Boostrap styles -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <!-- css styles link -->
+    <link rel="stylesheet" href="/assets/css/winning page.css">
+   
+</head>
+<body>
+    <div class="winning-rusultcontainer" id="popup">
+        <h5><b>Bid Rusult</b></h5>
+        <img src="/assets/images/winning cup.png">
+        <h3>RANK 01</h3>
+        <p>Configuration!!For winning bid session,we will contact you,best wishes for next one.</p>
+        <button onclick="openpopup()">Result details</button>
+        <div class="details-popup">
+            <i class="fa-solid fa-trophy"></i>
+            <h5>Winner info</h5>
+            <h4>products</h4>
+            <h3>winner</h3>
+            <div class="left-section">
+                <img src="/assets/images/vivo v29.jpeg">
+                <div class="left-side content">
+                <h6>Name:<b>vivo v29</b></h6>
+                <h6>Catagory:<b>mobile</b></h6>
+                <h6>Seller:<b>viswas</b></h6>
+                <h6>Price:<span>6500.$</span></h6>
+                </div>
+            <div class="winner">
+                    <img src="/assets/images/winners list 2.png">
+             <div class="right-section">
+                <h6>Name:<b>viswas</b></h6>
+                <h6>Ph no:<b>8015963714</b></h6>
+                <h6>Submitted price:<b>10500.$</b></h6>
+                
+             </div>
+
+            </div>
+        </div>
+        <div class="Bid-Ranking">
+            <i class="fa-solid fa-ranking-star"></i>
+            <h2>Bid Ranking</h2>
+            <table border="1">
+                <thead >
+                    <th>RANK</th>
+                    <Th>NAME</Th>
+                    <Th>SUBMITTED PRICE</Th>
+                </thead>
+                <tbody>
+                    <TD>1</TD>
+                    <TD>viswas</TD>
+                    <td><span>10500.$</span></td>
+                </tbody>
+                <tbody>
+                    <TD>2</TD>
+                    <TD>Gopinath</TD>
+                    <td><span>9500.$</span></td>
+                </tbody>
+                <tbody>
+                    <TD>3</TD>
+                    <TD>Sathish</TD>
+                    <td><span>7500.$</span></td>
+                </tbody>
+                <tbody>
+                    <TD>4</TD>
+                    <TD>santhosh</TD>
+                    <td><span>5500.$</span></td>
+                </tbody>
+                <tbody>
+                    <TD>5</TD>
+                    <TD>Magesh</TD>
+                    <td><span>3500.$</span></td>
+                </tbody>
+                <tbody>
+                    <TD>6</TD>
+                    <TD>Hari</TD>
+                    <td><span>2500.$</span></td>
+                </tbody>
+               </table>
+             <button onclick="closepopup()">ok</button>
+        </div>
+
+
+            
+        
+
+        
+    </div>
+    <script>
+        let popup=document.getElementById("popup")
+        function openpopup(){
+           popup.classList.add("open-popup");
+        }
+        function closepopup(){
+           popup.classList.remove("open-popup");
+        }
+        
+    </script>
+</body>
+</html>
